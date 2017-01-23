@@ -203,4 +203,112 @@ describe('Zeropark',()=>{
 
   })
 
+
+  describe('campaign actions',()=>{
+
+    xit('bid',(done)=>{
+      zeropark.campaignActions.Bid('2c5d5e70-b2da-11e6-b64b-0e855f2e0669',{bid:0.0}).then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('delete',(done)=>{
+      zeropark.campaignActions.Delete('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('pause',(done)=>{
+      zeropark.campaignActions.Pause('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('daily budget',(done)=>{
+      zeropark.campaignActions.DailyBudget('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('total budget',(done)=>{
+      zeropark.campaignActions.TotalBudget('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('restore',(done)=>{
+      zeropark.campaignActions.Restore('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('resume',(done)=>{
+      zeropark.campaignActions.Resume('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+  })
+
+
+  describe('country actions',()=>{
+
+    xit('bid',(done)=>{
+      zeropark.countryActions.AutoBid('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('pause',(done)=>{
+      zeropark.countryActions.Pause('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+    xit('resume',(done)=>{
+      zeropark.countryActions.Resume('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+
+
+  })
+
+
+  describe('keywordActions',()=>{
+
+  })
+
+
+  describe('paused targets',()=>{
+
+    xit('paused targets',(done)=>{
+      zeropark.pausedTargets.Pause('2c5d5e70-b2da-11e6-b64b-0e855f2e0669').then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+  })
+
+
+  describe('target actions',()=>{
+
+    it('pause target',(done)=>{
+      zeropark.targetActions.targetPause('2c5d5e70-b2da-11e6-b64b-0e855f2e0669',"kilo-lit-RlhVtBaC").then((data)=>{
+        console.log(data);
+        done();
+      }).catch(console.log)
+    })
+  })
+
 })
