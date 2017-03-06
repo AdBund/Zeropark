@@ -33,7 +33,9 @@ var Campaign = function (_Base) {
 
   _createClass(Campaign, [{
     key: 'pause',
-    value: function pause(campaignId) {
+    value: function pause(_ref) {
+      var campaign_id = _ref.campaign_id;
+
       var url = this.baseUrl + '/campaign/' + campaignId + '/pause';
       var promise = _request2.default.post(url).set('api-token', this.apiKey).end();
       return promise.then(function (res) {
@@ -42,7 +44,9 @@ var Campaign = function (_Base) {
     }
   }, {
     key: 'start',
-    value: function start(campaignId) {
+    value: function start(_ref2) {
+      var campaign_id = _ref2.campaign_id;
+
       var url = this.baseUrl + '/campaign/' + campaignId + '/resume';
       var promise = _request2.default.post(url).set('api-token', this.apiKey).end();
       return promise.then(function (res) {
